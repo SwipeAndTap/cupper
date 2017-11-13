@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Merge Conflicts | Git Workflow
       
     </title>
     
@@ -251,7 +251,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,37 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Merge Conflicts
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    <p>If there are any merge conflicts at this point, they must be solved before merging the pull request to the requested
+branch.</p>
+
+<p>For simple merge conflicts, you have the ability to use the web editor to fix them by going through the list of files
+with merge conflicts and looking for the following the following lines:</p>
+
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name
+</code></pre>
+
+<p>This splits the current branch and merging branch to show the
+differences between the files. Simply remove the conflict characters and leave the code that is correct.</p>
+
+<p>For more complex conflicts you must use the command line to solve them. This involves viewing the files in your editor
+of choice and manually going through and committing the fixes back onto the same branch. When this is completed, it can
+be pushed and the conflicts should no longer show in the pull request.</p>
+
+<p>When the conflicts have been solved, it&rsquo;s time to <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Merge and Cleanup</a>.</p>
+
   </main>
 
           <footer role="contentinfo">

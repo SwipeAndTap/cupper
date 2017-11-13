@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Committing on Git Workflow</title>
+    <link>https://swipeandtap.github.io/git-workflow/patterns/committing/</link>
+    <description>Recent content in Committing on Git Workflow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://swipeandtap.github.io/git-workflow/patterns/committing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Committing Locally</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/</guid>
+      <description>As the first step, committing work locally should be a consistent part of your workflow which will help in many ways such as keeping related code together and creating a history that reduces risk in the event of reverting code.
+Commit Messages A good history is only as good as its commit messages. Being descriptive will help to make the timeline more readable and understandable for team members.
+The simplest way to stage and commit changes is as follows:</description>
+    </item>
+    
+    <item>
+      <title>Pushing to Remote Branch</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/</guid>
+      <description>Eventually, the changes made locally will have to be pushed to the online repository both for backup purposes and also for members to be able to actively see progress across the team for those working on the same area.
+At a minimum, all local commits should be pushed at least twice a day, once before lunch and once before leaving the office. There is no limit on the number of pushes to the remote branch per day, but these two times are recommended for many reasons:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merging on Git Workflow</title>
+    <link>https://swipeandtap.github.io/git-workflow/patterns/merging/</link>
+    <description>Recent content in Merging on Git Workflow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://swipeandtap.github.io/git-workflow/patterns/merging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pull Requests</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/pull-requests/</guid>
+      <description>Pull Request Creating a pull request for a feature branch will help to make sure that everything merged to the development branch is of a good coding standard and also reaches the intended goal, as well as helping to maintain an accurate and descriptive commit history that takes into account the branch that was merged in.
+Pull requests are also a great way to start a conversation relating to a feature, allowing users to talk through any questions and ideas before continuing with development.</description>
+    </item>
+    
+    <item>
+      <title>Merge Conflicts</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/</guid>
+      <description>If there are any merge conflicts at this point, they must be solved before merging the pull request to the requested branch.
+For simple merge conflicts, you have the ability to use the web editor to fix them by going through the list of files with merge conflicts and looking for the following the following lines:
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD ======= &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; branch-name  This splits the current branch and merging branch to show the differences between the files.</description>
+    </item>
+    
+    <item>
+      <title>Merge and Cleanup</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/</guid>
+      <description>Once any changes have been mad, review is approved and the branch has no merge conflicts, a user can successfully merge the pull request.
+Once the branch is merged, a purple icon will show that status on github. At this point, you should delete the branch unless further work will continue on the branch. If you have finished with the branch and choose to delete it, you can update your local environment as follows:</description>
+    </item>
+    
+  </channel>
+</rss>

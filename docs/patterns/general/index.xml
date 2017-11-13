@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Git Workflow</title>
+    <link>https://swipeandtap.github.io/git-workflow/patterns/general/</link>
+    <description>Recent content in General on Git Workflow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://swipeandtap.github.io/git-workflow/patterns/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create New Project</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/general/new-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/general/new-project/</guid>
+      <description>When a new project is ready to be implemented, a new empty private repository will be created on the Swipe &amp;amp; Tap GitHub account
+A designated user will then initialise the directory structure based on the selected framework and push to the remote origin using the following steps:
+ Create a local directory to store the project:  mkdir [project]  Initalise local git repository using the following command:  git init  Initialise project structure and perform an initial commit</description>
+    </item>
+    
+    <item>
+      <title>Clone Existing Project</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/</guid>
+      <description>Further team members can then clone the repository to their local machines:
+git clone https://github.com/SwipeAndTap/project.git [project]    [project] refers to the name of the folder you would like to clone the project into   Now you are ready to create  Constant Branches.</description>
+    </item>
+    
+  </channel>
+</rss>

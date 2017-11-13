@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Feature Branches | Git Workflow
       
     </title>
     
@@ -201,7 +201,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,106 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Feature Branches
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#creating-a-branch">
+            Creating a branch
+          </a>
+        </li>
+      
+        <li>
+          <a href="#naming-conventions">
+            Naming conventions
+          </a>
+        </li>
+      
+        <li>
+          <a href="#examples">
+            Examples
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 id="creating-a-branch">Creating a branch</h2>
+
+<p>As stated in the <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Constant Branches</a> section, the Development branch will be the root branch of the
+project lifecycle yet it should not be worked on directly.</p>
+
+<p>For each major feature within the system, a new independent branch should be created (see <a href="#naming-conventions">Naming Conventions</a>)
+from the dev branch. This can be done by using the following command (making
+sure that the current branch is dev):</p>
+
+<pre class="cmd"><code>git checkout -b [branch-name]</code></pre>
+
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+    [branch-name] refers to the name of the branch you are creating
+
+  </div>
+</aside>
+
+
+<p>This command will both create a new branch and also checkout that branch so that it can be immediately worked on.</p>
+
+<p>Following on from here, development can begin on the feature using the continued flow mentioned in sections
+<a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/committing/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Committing</a> and <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/merging/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Merging</a>.</p>
+
+<h2 id="naming-conventions">Naming conventions</h2>
+
+<p>The naming conventions illustrated here are merely guidelines but should help to structure feature branches in a way that can be understood by all members of a team working on a project.</p>
+
+<p>Feature branches should use the following conventions where appropriate:</p>
+
+<ul>
+<li>Words should only contain lowercase letters</li>
+<li>A hyphen should be used between words if more than 1</li>
+<li>Branch name should describe the feature in plain English in as minimum words as possible</li>
+<li>If branch relates to an API, it should be prefixed with <code>api/</code></li>
+<li>If branch relates to previous feature, the name should match and be appended with an appropriate word such as <code>fix</code> or <code>updates</code></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<p><strong>Feature</strong>
+A web dashboard overview of system users.<br />
+<strong>Branch</strong>
+<code>users-dashboard</code></p>
+
+<p><strong>Feature</strong>
+Improved designs for a form that is used for adding inventory which is an existing feature<br />
+<strong>Branch</strong>
+<code>inventory-updates</code></p>
+
+<p><strong>Feature</strong>
+APIs for getting and adding new patient details for a hospital<br />
+<strong>Branch</strong>
+<code>api/patients</code></p>
+
+<p>Once the branch is in place and coding a feature has begun, you can start <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Committing Locally</a> to continue the workflow.</p>
+
   </main>
 
           <footer role="contentinfo">

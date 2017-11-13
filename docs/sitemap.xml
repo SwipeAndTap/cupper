@@ -3,40 +3,86 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://swipeandtap.github.io/cupper/tags/another-tag/</loc>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/general/new-project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/general/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/merging/pull-requests/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/branching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/committing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/merging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/errors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://swipeandtap.github.io/cupper/categories/</loc>
+    <loc>https://swipeandtap.github.io/git-workflow/print-version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://swipeandtap.github.io/git-workflow/patterns/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://swipeandtap.github.io/cupper/print-version/</loc>
-  </url>
-  
-  <url>
-    <loc>https://swipeandtap.github.io/cupper/tags/example-tag/</loc>
+    <loc>https://swipeandtap.github.io/git-workflow/tags/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swipeandtap.github.io/cupper/patterns/pattern/</loc>
-  </url>
-  
-  <url>
-    <loc>https://swipeandtap.github.io/cupper/patterns/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swipeandtap.github.io/cupper/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://swipeandtap.github.io/cupper/</loc>
   </url>
   
 </urlset>

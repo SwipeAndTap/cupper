@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Rolling Back | Git Workflow
       
     </title>
     
@@ -276,7 +276,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,69 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Rolling Back
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#reverting">
+            Reverting
+          </a>
+        </li>
+      
+        <li>
+          <a href="#resetting">
+            Resetting
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<h2 id="reverting">Reverting</h2>
+
+<p>If ever you need to go back to a previous commit, the recommended way is using the <code>revert</code> keyword with the commit id
+that you would like to revert to:</p>
+
+<pre class="cmd"><code>git revert [commit-id]</code></pre>
+
+
+<p>This will firstly revert your current branch to that particular commit but will not lose the history between. It will
+create a new commit for the reversion which is a safe way to undo code.</p>
+
+<h2 id="resetting">Resetting</h2>
+
+<p>Another useful but sometimes dangerous command is <code>reset</code>.<br />
+This can be used to undo files in the staging area if they were accidentally added. This can be done with:
+<pre class="cmd"><code>git reset [file-name]</code></pre>
+
+To unstage a particular file.</p>
+
+<p>OR</p>
+
+<p><pre class="cmd"><code>git reset</code></pre>
+
+To reset all files from the staging area.</p>
+
+<p>This will leave the actually code as it is but simply take the staging back to where the previous commit was.</p>
+
+<p>The other thing to consider is the <code>—hard</code> flag which performs the same job as above but actually resets the code in the
+selected file(s) to what was in the last commit, thus losing any changes you have made since.<br />
+Using hard resets should only be performed in an absolute emergency or only if you know what you are doing.</p>
+
   </main>
 
           <footer role="contentinfo">

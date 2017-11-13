@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Constant Branches | Git Workflow
       
     </title>
     
@@ -192,7 +192,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,77 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Constant Branches
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#master">
+            Master
+          </a>
+        </li>
+      
+        <li>
+          <a href="#dev%2fdevelopment">
+            Dev/Development
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<p>Each project will always begin with the following 2 branches that will remain active throughout the entire project (and
+beyond).</p>
+
+<h2 id="master">Master</h2>
+
+<p>The master branch that is automatically introduced with new GitHub projects will be the starting point for all
+development.</p>
+
+<p>This is intended to be the most stable branch of all, which will be used in the live production environment of the
+client.
+This means that all code that is merged to it will have been thoroughly tested and approved before getting to this
+constant stage.</p>
+
+<aside aria-label="warning" class="note warning">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 48.430474 41.646302" focusable="false">
+      <use xlink:href="#warning"></use>
+    </svg>
+    
+The only time you should commit to the master branch is when merging the dev branch into it.
+
+  </div>
+</aside>
+
+
+<h2 id="dev-development">Dev/Development</h2>
+
+<p>From the master branch, a secondary branch will be created to be the base for all development throughout the project.</p>
+
+<p>Though this branch should remain stable, having it separate from the master branch will allow testing features and
+fixing bugs to be isolated from the production environment.<br />
+Therefore, when the dev branch is stable, it can be safely merged into the master branch assuming it has been tested and
+reviewed as necessary.</p>
+
+<p>Team members should not work directly on this branch but should create separate feature branches that are eventually
+added as pull requests and merged into this branch when completed.</p>
+
+<p>This process is outlined in the <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Feature Branches</a> section.</p>
+
   </main>
 
           <footer role="contentinfo">

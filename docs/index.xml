@@ -1,33 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Name Of This Project/Site on Git Workflow</title>
-    <link>https://swipeandtap.github.io/cupper/</link>
-    <description>Recent content in The Name Of This Project/Site on Git Workflow</description>
+    <title>Git Workflow for Swipe &amp; Tap on Git Workflow</title>
+    <link>https://swipeandtap.github.io/git-workflow/</link>
+    <description>Recent content in Git Workflow for Swipe &amp; Tap on Git Workflow</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="https://swipeandtap.github.io/cupper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://swipeandtap.github.io/git-workflow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cupper</title>
-      <link>https://swipeandtap.github.io/cupper/print-version/</link>
+      <title>Committing Locally</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://swipeandtap.github.io/cupper/print-version/</guid>
-      <description>You don&amp;rsquo;t want to edit this file :-)</description>
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/</guid>
+      <description>As the first step, committing work locally should be a consistent part of your workflow which will help in many ways such as keeping related code together and creating a history that reduces risk in the event of reverting code.
+Commit Messages A good history is only as good as its commit messages. Being descriptive will help to make the timeline more readable and understandable for team members.
+The simplest way to stage and commit changes is as follows:</description>
     </item>
     
     <item>
-      <title>My First Pattern File</title>
-      <link>https://swipeandtap.github.io/cupper/patterns/pattern/</link>
+      <title>Constant Branches</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://swipeandtap.github.io/cupper/patterns/pattern/</guid>
-      <description>You can just write markdown here. But don&amp;rsquo;t forget there are lots of shortcodes to help you with writing and showing off code too. See the documentation for Cupper for full details.
-   Here&amp;rsquo;s an example of a note shortcode for adding little &amp;ldquo;oh and also&amp;rdquo; notes to your patterns&amp;rsquo; documentation.
-  </description>
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/branching/constant-branches/</guid>
+      <description>Each project will always begin with the following 2 branches that will remain active throughout the entire project (and beyond).
+Master The master branch that is automatically introduced with new GitHub projects will be the starting point for all development.
+This is intended to be the most stable branch of all, which will be used in the live production environment of the client. This means that all code that is merged to it will have been thoroughly tested and approved before getting to this constant stage.</description>
+    </item>
+    
+    <item>
+      <title>Create New Project</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/general/new-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/general/new-project/</guid>
+      <description>When a new project is ready to be implemented, a new empty private repository will be created on the Swipe &amp;amp; Tap GitHub account
+A designated user will then initialise the directory structure based on the selected framework and push to the remote origin using the following steps:
+ Create a local directory to store the project:  mkdir [project]  Initalise local git repository using the following command:  git init  Initialise project structure and perform an initial commit</description>
+    </item>
+    
+    <item>
+      <title>Pull Requests</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/pull-requests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/pull-requests/</guid>
+      <description>Pull Request Creating a pull request for a feature branch will help to make sure that everything merged to the development branch is of a good coding standard and also reaches the intended goal, as well as helping to maintain an accurate and descriptive commit history that takes into account the branch that was merged in.
+Pull requests are also a great way to start a conversation relating to a feature, allowing users to talk through any questions and ideas before continuing with development.</description>
+    </item>
+    
+    <item>
+      <title>Rolling Back</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/</guid>
+      <description>Reverting If ever you need to go back to a previous commit, the recommended way is using the revert keyword with the commit id that you would like to revert to:
+git revert [commit-id] This will firstly revert your current branch to that particular commit but will not lose the history between. It will create a new commit for the reversion which is a safe way to undo code.</description>
+    </item>
+    
+    <item>
+      <title>Clone Existing Project</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/</guid>
+      <description>Further team members can then clone the repository to their local machines:
+git clone https://github.com/SwipeAndTap/project.git [project]    [project] refers to the name of the folder you would like to clone the project into   Now you are ready to create  Constant Branches.</description>
+    </item>
+    
+    <item>
+      <title>Feature Branches</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/branching/feature-branches/</guid>
+      <description>Creating a branch As stated in the  Constant Branches section, the Development branch will be the root branch of the project lifecycle yet it should not be worked on directly.
+For each major feature within the system, a new independent branch should be created (see Naming Conventions) from the dev branch. This can be done by using the following command (making sure that the current branch is dev):</description>
+    </item>
+    
+    <item>
+      <title>Merge Conflicts</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-conflicts/</guid>
+      <description>If there are any merge conflicts at this point, they must be solved before merging the pull request to the requested branch.
+For simple merge conflicts, you have the ability to use the web editor to fix them by going through the list of files with merge conflicts and looking for the following the following lines:
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD ======= &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; branch-name  This splits the current branch and merging branch to show the differences between the files.</description>
+    </item>
+    
+    <item>
+      <title>Pushing to Remote Branch</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/</guid>
+      <description>Eventually, the changes made locally will have to be pushed to the online repository both for backup purposes and also for members to be able to actively see progress across the team for those working on the same area.
+At a minimum, all local commits should be pushed at least twice a day, once before lunch and once before leaving the office. There is no limit on the number of pushes to the remote branch per day, but these two times are recommended for many reasons:</description>
+    </item>
+    
+    <item>
+      <title>Merge and Cleanup</title>
+      <link>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/</guid>
+      <description>Once any changes have been mad, review is approved and the branch has no merge conflicts, a user can successfully merge the pull request.
+Once the branch is merged, a purple icon will show that status on github. At this point, you should delete the branch unless further work will continue on the branch. If you have finished with the branch and choose to delete it, you can update your local environment as follows:</description>
+    </item>
+    
+    <item>
+      <title>Cupper</title>
+      <link>https://swipeandtap.github.io/git-workflow/print-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swipeandtap.github.io/git-workflow/print-version/</guid>
+      <description>You don&amp;rsquo;t want to edit this file :-)</description>
     </item>
     
   </channel>

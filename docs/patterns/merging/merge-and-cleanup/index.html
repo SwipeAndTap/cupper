@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Merge and Cleanup | Git Workflow
       
     </title>
     
@@ -260,7 +260,7 @@
                             </li>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/merging/merge-and-cleanup/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,53 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Merge and Cleanup
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    <p>Once any changes have been mad, review is approved and the branch has no merge conflicts, a user can successfully merge
+the pull request.</p>
+
+<p>Once the branch is merged, a purple icon will show that status on github. At this point, you should delete the branch
+unless further work will continue on the branch.
+If you have finished with the branch and choose to delete it, you can update your local environment as follows:</p>
+
+<ol>
+<li>Checkout the branch that the current feature branch was merged into</li>
+
+<li><p>Pull the committed merge:
+<pre class="cmd"><code>git pull origin [branch]</code></pre>
+</p></li>
+
+<li><p>Safely delete the feature branch that was merged:
+<pre class="cmd"><code>git branch -d [feature-branch]</code></pre>
+</p></li>
+</ol>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+Note the lowercase -d in the above command. This is a safe delete option that will only delete the feature branch if it 
+has been merged.
+If this does not work and you are completely sure that you no longer need the local branch, you can override this using 
+a capital -D instead
+
+  </div>
+</aside>
+
+
+<p>If you have any issues at this stage, it might be useful to look at different ways of <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/errors/rolling-back/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Rolling Back</a>.</p>
+
   </main>
 
           <footer role="contentinfo">

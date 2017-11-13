@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Committing Locally | Git Workflow
       
     </title>
     
@@ -217,7 +217,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/committing/committing-locally/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,86 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Committing Locally
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          <a href="#commit-messages">
+            Commit Messages
+          </a>
+        </li>
+      
+        <li>
+          <a href="#frequency">
+            Frequency
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
+    
+
+<p>As the first step, committing work locally should be a consistent part of your workflow which will help in many ways
+such as keeping related code together and creating a history that reduces risk in the event of reverting code.</p>
+
+<h2 id="commit-messages">Commit Messages</h2>
+
+<p>A good history is only as good as its commit messages. Being descriptive will help to make the timeline more readable
+and understandable for team members.</p>
+
+<p>The simplest way to stage and commit changes is as follows:</p>
+
+<p><pre class="cmd"><code>git add .</code></pre>
+
+<pre class="cmd"><code>git commit -m “message”</code></pre>
+</p>
+
+<p>This will firstly stage all files within the commit, followed by committing those files with the inserted message.</p>
+
+<p>To stage files individually, you can replace the “.” character with the relative path the the file you would like to
+stage.
+Doing it by file it effective when you need to split a lot of changes into more digestible commits.</p>
+
+<p>Messages should be in the present tense and begin with a verb. An accepted practice is to structure your message to
+extend the following statement:</p>
+
+<p><em>&ldquo;If applied, this commit will…&rdquo;</em></p>
+
+<p>Other guidelines to consider are:</p>
+
+<ul>
+<li>Summarise the changes by limiting the message to 50 characters</li>
+<li>Concentrate on explaining WHAT has changed as opposed to WHY</li>
+<li>Capitalise the first letter of the summary</li>
+</ul>
+
+<p>If you’re having a hard time summarising, you might be committing too many changes at once. See <a href="#frequency">Frequency</a>
+section for help on this.</p>
+
+<h2 id="frequency">Frequency</h2>
+
+<p>How often you commit code can have a great effect on its history and how easy it is to follow. This will help both you
+and your team over time to understand the features that you are developing.
+Though it may be overkill to commit after each line of code, it should ideally be <strong>multiple times a day</strong>.</p>
+
+<p>As a general guideline, code should be committed <strong>as each subset of a feature is completed</strong>.<br />
+This way, commit messages can be kept short and concise and will keep highly related code within the same commit.</p>
+
+<p>To make sure the remote repository contains the newest code commits, you can start <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/committing/pushing-to-remote/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Pushing to Remote Branch</a>.</p>
+
   </main>
 
           <footer role="contentinfo">

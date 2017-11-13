@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/">
+    <link rel="canonical" href="https://swipeandtap.github.io/git-workflow/patterns/general/new-project/">
     <link rel="apple-touch-icon" sizes="57x57" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="https://swipeandtap.github.io/git-workflow/images/apple-touch-icon-72x72.png">
@@ -31,7 +31,7 @@
     </style>
     <title>
       
-        Patterns | Git Workflow
+        Create New Project | Git Workflow
       
     </title>
     
@@ -167,7 +167,7 @@
                         <ul>
                           
                             <li class="pattern">
-                              <a href="https://swipeandtap.github.io/git-workflow/patterns/general/new-project/" >
+                              <a href="https://swipeandtap.github.io/git-workflow/patterns/general/new-project/" aria-current="page">
                                 <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
                                   <use xlink:href="#bookmark"></use>
                                 </svg>
@@ -298,11 +298,55 @@
           
   <main id="main">
     <h1>
-      Patterns
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Create New Project
     </h1>
-    <ul class="patterns-list">
+    
+    
       
-    </ul>
+
+
+    
+    <p>When a new project is ready to be implemented, a new empty private repository will be created on the <a href="https://github.com/SwipeAndTap">Swipe &amp; Tap GitHub account</a></p>
+
+<p>A designated user will then initialise the directory structure based on the selected framework and push to the remote origin using the following steps:</p>
+
+<ol>
+<li><p>Create a local directory to store the project:
+<pre class="cmd"><code>    mkdir [project]</code></pre>
+</p></li>
+
+<li><p>Initalise local git repository using the following command:
+<pre class="cmd"><code>    git init</code></pre>
+</p></li>
+
+<li><p>Initialise project structure and perform an initial commit</p></li>
+
+<li><p>Reference the github repository as your remote origin
+<pre class="cmd"><code>    git remote add origin https://github.com/SwipeAndTap/project.git</code></pre>
+</p></li>
+
+<li><p>Push all of the inital code to the remote Github repository
+<pre class="cmd"><code>    git push -u origin master</code></pre>
+</p></li>
+</ol>
+
+<aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+    [project] refers to the name of the folder you would like to create the project within
+
+  </div>
+</aside>
+
+
+<p>Other users can now <a class="pattern-link" href="https://swipeandtap.github.io/git-workflow/patterns/general/clone-project/"><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"> <use xlink:href="#bookmark"></use> </svg>Clone Existing Project</a>.</p>
+
   </main>
 
           <footer role="contentinfo">
