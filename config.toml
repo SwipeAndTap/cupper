@@ -1,6 +1,6 @@
 languageCode = "en-gb"
 title = "Git Workflow"
-baseURL = "https://github.com/SwipeAndTap/cupper"
+baseURL = "https://swipeandtap.github.io/cupper/"
 canonifyURLs = true
 theme = "cupper"
 publishDir = "docs"
